@@ -4,8 +4,9 @@ const urlsToCache = [
   '/',
   '/cafescript.css',
   '/cafescriptanimasyon.css',
-  '/resposive.css',
-  '/cafescript.js'
+  '/responsive.css',
+  '/cafescript.js',
+  '/sw.js'
 ];
 
 // Web sayfası yüklendiğinde önbelleği açar ve ağdan en son veriyi alır
