@@ -11,6 +11,21 @@
     <link rel="preload" href="responsive.css" as="style">
     <link rel="preload" href="cafescriptanimasyon.css" as="style">
     <title>Cafe Script</title>
+
+    <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw1.js')
+      .then(function(registration) {
+        console.log('Servis işçisi kaydedildi: ', registration.scope);
+      })
+      .catch(function(err) {
+        console.log('Servis işçisi kaydedilemedi: ', err);
+      });
+  });
+}
+</script>
+    
 </head>
 
 <body>
