@@ -357,7 +357,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 100svh;
     color: white;
     text-align: left;
     align-items: center;
@@ -365,7 +365,7 @@ body {
 
 .about .bg-black-opacity{
     background-color: #0006;
-    height: 400px;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: space-around;
