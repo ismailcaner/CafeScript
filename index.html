@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafescript.css">
+    <link rel="stylesheet" href="cafescriptanimasyon.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="cafescript.js"></script>
+    <link rel="preload" href="cafescript.css" as="style">
+    <link rel="preload" href="responsive.css" as="style">
+    <link rel="preload" href="cafescriptanimasyon.css" as="style">
+    <title>Cafe Script</title>
+</head>
+
+<body>
+
+<!--HEADER-->
+
+    <div class="header">
+        <div><h1 onclick="anasayfa()">Cafe Script</a></h1></div>
+            <div class="buttons">
+                 <button onclick="anasayfa()">Ana Sayfa</button>
+                 <button onclick="kahvelerdiv()" >Kahveler</button>
+                 <button onclick="hakkındadiv()">Hakkımızda</button>
+                 <button onclick="iletisim()">İletişim</button>
+                 <button>Sipariş</button>
+            </div>
+    </div>
+
+<!--MAİN-->
+
+<div class="main">
+        <div class="slogans"><h1>En iyi kahveyi en iyi şekilde sizlere sunmak için buradayız!<p>Cafe Script</p></h1></div>
+        <div class="coffeecup"><img src="cafescriptimages/kahve1.webp"></div>
+</div>
+
+<!--COFFEES-->
+
+<div class="coffees" id="coffees">
+    <h1>For You.</h1>
+        <div class="cards">
+             <ul><img src="cafescriptimages/kahve1.webp">
+                 <h2>Flat White</h2>%100 arabica kahve çekirdeklerinden üretilmiş</ul> 
+             <ul><img src="cafescriptimages/kahve1.webp">
+                 <h2>Cappicino</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>   
+             <ul><img src="cafescriptimages/kahve1.webp">
+                <h2>Americano</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>    
+             <ul><img src="cafescriptimages/kahve1.webp">
+                 <h2>Espresso</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>     
+            <div class="responsive">
+             <ul><img src="cafescriptimages/kahve1.webp">
+                <h2>Flat White</h2>%100 arabica kahve çekirdeklerinden üretilmiş</ul>
+             <ul><img src="cafescriptimages/kahve1.webp">
+                <h2>Cappicino</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>      
+             <ul><img src="cafescriptimages/kahve1.webp">
+                <h2>Americano</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>       
+             <ul><img src="cafescriptimages/kahve1.webp">
+                <h2>Espresso</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>
+            </div>
+        </div>
+</div>
+
+<!--PREMİUM TASTE-->
+
+<div class="premium" id="about">
+    <img src="cafescriptimages/premiumtaste.webp" class="premiumtastejpg">
+    <div class="premiumtaste">
+        <h1> Premium Taste</h1>
+            <p>Sizler için özenle ve titizlikle hazırlandı. Her damak zevkine en uygun kahveyi yapmak yegane hedefimizdir.</p>
+                <div class="materials"> <img src="cafescriptimages/coffeebean.webp" class="img16px">%100 Arabica</div>
+                <div class="materials"> <img src="cafescriptimages/sevices.webp" class="img16px">First Class Service</div>
+                <div class="materials"> <img src="cafescriptimages/coffee.webp" class="img16px">Premium Blend</div>
+    </div>
+</div>
+
+<!--COMMENTS-->
+
+<div class="comments">
+    <h1>Sizlerden Gelenler</h1>
+    <div class="comment-s" id="commentscroll">
+        <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/caner.webp">
+            <p class="username">İsmail Caner <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">İçtiğim en iyi Flat White olabilir.🤙🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/Nur.webp">
+            <p class="username">Ayşenur Uygun <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">Daha önce böylesini içmemiştim. Mocha harikaydı.👌🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/emirhan.webp">
+            <p class="username">Emirhan Bodur <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">İçtiğim en iyi kahve! Herkese öneririm.🤌🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/kadir.webp">
+            <p class="username">Kadir Sarıkaya <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">Bildiğiniz bütün kahveleri unutun.🙌🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/caner.webp">
+            <p class="username">İsmail Caner <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">İçtiğim en iyi Flat White olabilir.🤙🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/Nur.webp">
+            <p class="username">Ayşenur Uygun <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">Daha önce böylesini içmemiştim. Mocha harikaydı.👌🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/emirhan.webp">
+            <p class="username">Emirhan Bodur <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">İçtiğim en iyi kahve! Herkese öneririm.🤌🏻</p>
+    </div>
+    <div class="space"></div>
+    <div class="comment">
+        <div class="usercontent">
+            <img src="cafescriptimages/kadir.webp">
+            <p class="username">Kadir Sarıkaya <p class="time">2 day ago</p>
+        </div>
+        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        <p class="comment-p">Bildiğiniz bütün kahveleri unutun.🙌🏻</p>
+    </div>
+</div>
+</div>
+
+<!--ABOUT-->
+
+<div class="about" id="iletisim">
+<div class="bg-black-opacity">
+<div class="footer">
+<h2>Cafe Script</h2>
+<div class="info">Adres</div>
+<p>Yukarı Mahalle No:22 Bozkır/KONYA TR</p>
+<div class="info">Telefon</div>
+<p> 444 0 444</p>
+<div class="info">Mail</div>
+<p>cafescript@info.com</p>
+    </div>
+<div class="icon">
+<a href="https://www.instagram.com/accounts/login/"> <img src="cafescriptimages/Instagram_icon.webp" class="appicon"> Intagram </a>
+<a href="https://twitter.com/"> <img src="cafescriptimages/twitter.webp" class="appicon"> X</a>
+<a href="https://www.linkedin.com/login"> <img src="cafescriptimages/linkedin.webp" class="appicon"> linkedin</a>
+</div>
+<div class="appstore">
+    <img src="cafescriptimages/appstore.webp" class="appstoreicon">
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+@keyframes slogan{
+    0% {
+        transform: translateX(-135%);
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+       transform: translateX(0%);
+       opacity: 1;
+    }
+}
+
+@keyframes derece360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes buyume {
+    from {
+        width: 0px;
+        transform: rotate(0deg);
+    }
+    to {
+        width: 400px;
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes deg90 {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes transfrom{
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+    to {
+        opacity: 1;
+        transform: translatez(10px);
+    }
+}
+
+@keyframes load{
+
+    0% { transform: translateX(-100%);
+         opacity: 0;}
+
+    25% { opacity: 0.5;}
+
+    50% { opacity: 0.8;}
+
+    100% { transform: translateX(0%);
+          opacity: 1;}
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 8))}
+}
+
+.comments {
+	overflow:hidden;
+}
+
+#commentscroll {
+	animation: scroll 30s linear infinite;
+	display: flex;
+	width: calc(250px * 16);
+}

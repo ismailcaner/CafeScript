@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1024px) {
+
+body{
+    margin: 0;
+   }
+
+.header {
+    display: grid;
+    justify-content: center;
+}
+.header h1{
+    font-size: 20px;
+    margin: 0px;
+    justify-content: center;
+    letter-spacing: 0px;
+}
+.header button{
+    font-size: medium;
+}
+.header .buttons{
+    margin: 0px;
+}
+
+.main{
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    height: 100dvh;
+}
+
+.main .slogans {
+    font-size: 15px;
+}
+
+.main p{
+    letter-spacing: 0px;
+}
+
+.main .coffeecup{
+    width: 0px;
+    height: 0px;
+}
+.main img{
+    width: 250px;
+}
+
+@keyframes buyume {
+    from {
+        width: 0px;
+        transform: rotate(0deg);
+    }
+    to {
+        width: 250px;
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes scroll1 {
+	0% { 
+        transform: translateX(0); 
+    }
+	100% {
+        transform: translateX(calc(-270px * 4))
+    }
+}
+
+.coffees {
+	overflow:hidden;
+}
+
+.cards {
+	animation: scroll1 15s linear infinite;
+	display: flex;
+	width: calc(270px * 8);
+}
+
+.coffees .responsive{
+    display: flex;
+}
+.coffees h1{
+    opacity: 1;
+}
+
+.comments h1{
+    opacity: 1;
+}
+
+.premium{
+    height: 100dvh;
+}
+
+.premium .premiumtastejpg{
+    display: none;
+}
+
+.premium p{
+    text-align: center;
+}
+
+.premium h1{
+    text-align: center;
+}
+
+.premium .materials{
+    justify-content: center;
+}
+
+.about {
+    display: grid;
+    height: 100dvh;
+}
+
+.about .bg-black-opacity{
+    display: grid;
+    height: 100dvh;
+    align-content: space-evenly;
+}
+
+.about .footer{
+    text-align: center;
+}
+
+.about .icon{
+    display: flex;
+}
+
+.about .appicon{
+    width: 30px;
+    height: 30px;
+}
+
+.about .appstore{
+    display: flex;
+    justify-content: center;
+}
+}

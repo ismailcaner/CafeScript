@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+/* HEADER */
+
+.header{
+    background-color: #8c440c;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 100px;
+    align-items: center;
+}
+
+.header h1{
+    color: white;
+    font-size: 40px;
+    font-family: pacifico, cursive;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    letter-spacing: 3px;
+}
+
+.header h1:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.header .buttons{
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+.header button{
+    background-color: rgba(255, 178, 84, 0);
+    border: none;
+    margin: 2.5px;
+    color:white;
+    padding: 8px;
+    transition: 0.3s ease;
+    font-size: large;
+    transition: 0.3s ease;
+}
+
+.header button:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+/* MAİN */
+
+.main{
+    background-color: #301500;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+}
+
+.main .slogans{
+    color: white;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+.main h1{
+    animation: slogan 3s ease;
+}
+
+.main p{
+    font-family:pacifico, cursive;
+    margin: 0px;
+    text-align: end;
+    transition: 0.3s ease;
+    letter-spacing: 3px;
+}
+
+.main p:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.main .coffeecup {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    animation: derece360 20s linear infinite;
+}
+
+.main img {
+    animation: buyume 3s ease;
+}
+
+.main img {
+    width: 400px;
+}
+
+/* COFFEES */
+
+.coffees{
+    text-align: center;
+    height: 500px;
+    display: grid;
+    align-items: center;
+}
+
+.coffees h1{
+    transition: 0.5s ease;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-family: pacifico, cursive;
+    opacity: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.coffees:hover{
+    h1{
+       opacity: 1;
+       transition: 0.5s ease;
+    }
+}
+
+.coffees .cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 0px 50px 0px;
+}
+
+.coffees .responsive{
+    display: none;
+}
+
+.coffees .space{
+    width: 230px;
+    background-color: white;
+    z-index: -1;
+}
+
+.coffees ul{
+    padding: 0px 10px 30px 10px;
+    text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.5s ease;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+    display: grid;
+    align-content: end;
+    height: 200px;
+    justify-items: center;
+    animation: transfrom 2s ease;
+}
+
+.coffees ul:hover{
+    background:#8c440c;
+    box-shadow: none;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    img{
+        transition: 0.5s linear;
+        transform: rotate(45deg);
+    }
+}
+
+.coffees img{
+    transition: 0.5s linear;
+    width: 190px;
+}
+
+.coffees h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.coffees p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* PREMİUM TASTE */
+
+.premium{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+    background: url(cafescriptimages/kahvelerbg.webp);
+    background-size: cover;
+}
+
+.premium .premiumtastejpg{
+    width: 450px;
+   transition: 2s ease;
+}
+
+.premium:hover{
+    .premiumtastejpg{
+    transition: 2s ease;
+    transform: rotate(90deg);
+    }
+}
+
+.premium .premiumtaste{
+    text-align: left;
+    width: 250px;
+    font-size: large;
+    font-family: system-ui;
+    display: grid;
+    align-items: center;
+}
+
+.premium h1{
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-family: pacifico, cursive;
+}
+
+.premium p{
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.premium .materials{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.premium .img16px{
+    width: 16px;
+    margin-right: 10px;
+}
+
+/* COMMENTS */
+
+.comments{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+    align-items: center;
+    display: grid;
+    align-content: space-evenly;
+}
+
+.comments h1{
+    opacity: 0;
+    transition: 0.5s ease;
+    font-family: pacifico, cursive;
+    width: 100vw;
+}
+
+.comments:hover{
+    h1{
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+}
+
+.comments .comment-s{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+    animation: load 5s ease;
+}
+
+.comments .space{
+    width: 230px;
+    background-color: white;
+    z-index: -1;
+}
+
+.comments .comment{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.5s ease;
+    box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+}
+
+.comments .comment:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.comments .usercontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.comments .username{
+    margin-left: 7px;
+    color: black;
+    font-size: medium;
+}
+
+.comments .time{
+    margin: 0px;
+    color: #e1e1e1;
+    font-size: small;
+}
+
+.comments .stars{
+    font-size: large;
+}
+
+.comments .comment-p{
+    background-color: #eeee;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-size: medium;
+    transition: 0.5s ease;
+}
+
+/* ABOUT */
+
+.about{
+    background: url(cafescriptimages/hakkındaarkaplan.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    text-align: left;
+    align-items: center;
+}
+
+.about .bg-black-opacity{
+    background-color: #0006;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about .info{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.about p{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about .icon{
+    display: grid;
+}
+
+.about a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.about .appicon{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about .appstoreicon{
+    width: 150px;
+}
