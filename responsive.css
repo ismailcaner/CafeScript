@@ -52,7 +52,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: baseline;
-    height: 70dvh;
+    height: 70svh;
 }
 
 .main .slogans {
@@ -74,7 +74,7 @@ body{
 }
 
 .main img{
-    width: 70dvw;
+    width: 60dvw;
 }
 
 @keyframes buyume {
@@ -83,7 +83,7 @@ body{
         transform: rotate(0deg);
     }
     to {
-        width: 70dvw;
+        width: 60dvw;
         transform: rotate(360deg);
     }
     
@@ -136,7 +136,7 @@ body{
 }
 
 .premium{
-    height: 100dvh;
+    height: 100svh;
 }
 
 .premium .premiumtastejpg{
@@ -173,12 +173,12 @@ body{
 
 .about {
     display: grid;
-    height: 100dvh;
+    height: 100svh;
 }
 
 .about .bg-black-opacity{
     display: grid;
-    height: 100dvh;
+    height: 100svh;
     align-content: space-evenly;
 }
 
