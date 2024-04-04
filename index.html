@@ -33,14 +33,25 @@ if ('serviceWorker' in navigator) {
 <!--HEADER-->
 
     <div class="header">
-        <div><h1 onclick="anasayfa()">Cafe Script</a></h1></div>
-            <div class="buttons">
-                 <button onclick="anasayfa()">Ana Sayfa</button>
-                 <button onclick="kahvelerdiv()" >Kahveler</button>
-                 <button onclick="hakkındadiv()">Hakkımızda</button>
-                 <button onclick="iletisim()">İletişim</button>
-                 <button>Sipariş</button>
+        <div class="dropdownmenu">
+            <div class="dropdown" onclick="toggleDropdown()">
+                <button class="dropbtn">Menü</button>
             </div>
+        </div>
+    <div class="h11"><h1>Cafe Script</h1></div>
+        <div class="buttons">
+             <button onclick="anasayfa()">Ana Sayfa</button>
+             <button onclick="kahvelerdiv()" >Kahveler</button>
+             <button onclick="hakkındadiv()">Hakkımızda</button>
+             <button onclick="iletisim()">İletişim</button>
+        </div>
+    </div>
+    
+    <div class="dropdown-content" id="dropdownContent">
+        <a href="#" onclick="anasayfa()"> Ana Sayfa</a>
+        <a href="#" onclick="kahvelerdiv()">Kahveler</a>
+        <a href="#" onclick="hakkındadiv()">Hakkımızda</a>
+        <a href="#" onclick="iletisim()">İletişim</a>
     </div>
 
 <!--MAİN-->
@@ -63,7 +74,7 @@ if ('serviceWorker' in navigator) {
                 <h2>Americano</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>    
              <ul><img src="cafescriptimages/kahve1.webp">
                  <h2>Espresso</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>     
-            <div class="responsive">
+        <div class="responsive">
              <ul><img src="cafescriptimages/kahve1.webp">
                 <h2>Flat White</h2>%100 arabica kahve çekirdeklerinden üretilmiş</ul>
              <ul><img src="cafescriptimages/kahve1.webp">
@@ -172,25 +183,25 @@ if ('serviceWorker' in navigator) {
 <!--ABOUT-->
 
 <div class="about" id="iletisim">
-<div class="bg-black-opacity">
-<div class="footer">
-<h2>Cafe Script</h2>
-<div class="info">Adres</div>
-<p>Yukarı Mahalle No:22 Bozkır/KONYA TR</p>
-<div class="info">Telefon</div>
-<p> 444 0 444</p>
-<div class="info">Mail</div>
-<p>cafescript@info.com</p>
+    <div class="bg-black-opacity">
+        <div class="footer">
+            <h2>Cafe Script</h2>
+            <div class="info">Adres</div>
+                <p>Yukarı Mahalle No:22 Bozkır/KONYA TR</p>
+            <div class="info">Telefon</div>
+                <p> 444 0 444</p>
+            <div class="info">Mail</div>
+                <p>cafescript@info.com</p>
+        </div>
+    <div class="icon">
+            <a href="https://www.instagram.com/accounts/login/"> <img src="cafescriptimages/Instagram_icon.webp" class="appicon"> Intagram </a>
+            <a href="https://twitter.com/"> <img src="cafescriptimages/twitter.webp" class="appicon"> X</a>
+            <a href="https://www.linkedin.com/login"> <img src="cafescriptimages/linkedin.webp" class="appicon"> linkedin</a>
     </div>
-<div class="icon">
-<a href="https://www.instagram.com/accounts/login/"> <img src="cafescriptimages/Instagram_icon.webp" class="appicon"> Intagram </a>
-<a href="https://twitter.com/"> <img src="cafescriptimages/twitter.webp" class="appicon"> X</a>
-<a href="https://www.linkedin.com/login"> <img src="cafescriptimages/linkedin.webp" class="appicon"> linkedin</a>
-</div>
-<div class="appstore">
-    <img src="cafescriptimages/appstore.webp" class="appstoreicon">
-</div>
-</div>
+        <div class="appstore">
+            <img src="cafescriptimages/appstore.webp" class="appstoreicon">
+        </div>
+    </div>
 </div>
 </body>
 </html>
