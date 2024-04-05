@@ -29,3 +29,7 @@ function toggleDropdown() {
     dropdownContent.classList.toggle("show");
 }
 
+function dropdownbtn() {
+    var dropdown = document.getElementById("dropbtn");
+    dropdown.classList.toggle("animation");
+}
