@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
+    <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw1.js')
+      .then(function(registration) {
+        console.log('Servis işçisi kaydedildi: ', registration.scope);
+      })
+      .catch(function(err) {
+        console.log('Servis işçisi kaydedilemedi: ', err);
+      });
+  });
+}
+</script>
+    
 <body>
 
 <!--HEADER-->
