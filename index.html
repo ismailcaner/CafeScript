@@ -7,25 +7,8 @@
     <link rel="stylesheet" href="cafescriptanimasyon.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="cafescript.js"></script>
-    <link rel="preload" href="cafescript.css" as="style">
-    <link rel="preload" href="responsive.css" as="style">
-    <link rel="preload" href="cafescriptanimasyon.css" as="style">
     <title>Cafe Script</title>
-
-    <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Servis işçisi kaydedildi: ', registration.scope);
-      })
-      .catch(function(err) {
-        console.log('Servis işçisi kaydedilemedi: ', err);
-      });
-  });
-}
-</script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
@@ -35,15 +18,15 @@ if ('serviceWorker' in navigator) {
     <div class="header">
         <div class="dropdownmenu">
             <div class="dropdown" onclick="toggleDropdown()">
-                <button class="dropbtn">Menü</button>
+                <button class="dropbtn" id="dropbtn" onclick="dropdownbtn()"><i class="fa-solid fa-chevron-down"></i></button>
             </div>
         </div>
     <div class="h11"><h1>Cafe Script</h1></div>
         <div class="buttons">
-             <button onclick="anasayfa()">Ana Sayfa</button>
-             <button onclick="kahvelerdiv()" >Kahveler</button>
-             <button onclick="hakkındadiv()">Hakkımızda</button>
-             <button onclick="iletisim()">İletişim</button>
+             <button class="button" onclick="anasayfa()">Ana Sayfa</button>
+             <button class="button" onclick="kahvelerdiv()" >Kahveler</button>
+             <button class="button" onclick="hakkındadiv()">Hakkımızda</button>
+             <button class="button" onclick="iletisim()">İletişim</button>
         </div>
     </div>
     
