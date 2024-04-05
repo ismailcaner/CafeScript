@@ -22,6 +22,15 @@
     }
 }
 
+@keyframes dropdown {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
 @keyframes buyume {
     from {
         width: 0px;
@@ -31,7 +40,6 @@
         width: 400px;
         transform: rotate(360deg);
     }
-    
 }
 
 @keyframes deg90 {
