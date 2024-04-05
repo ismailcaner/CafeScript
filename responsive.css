@@ -31,11 +31,7 @@ body{
     flex-grow: 1;
 }
 
-.header button{
-    font-size: medium;
-}
-
-.header button:hover{
+.header .button:hover{
     transform: initial;
     text-decoration:initial;
 }
@@ -46,6 +42,8 @@ body{
 
 .header .dropdownmenu{
     display: flex;
+    position: absolute;
+    left: 0;
 }
 
 .main{
@@ -199,4 +197,19 @@ body{
     display: flex;
     justify-content: center;
 }
+}
+
+.dropbtn{
+    font-size: x-large;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin-left: 5vw;
+    transition: 1s ease;
+}
+
+.dropbtn.animation{
+    transform: rotate(180deg);
+    animation: dropdown 1s ease;
 }
