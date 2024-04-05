@@ -206,10 +206,12 @@ body{
     color: white;
     padding: 0;
     margin-left: 5vw;
+    transform: rotate(0deg);
     transition: 1s ease;
 }
 
 .dropbtn.animation{
     transform: rotate(180deg);
-    animation: dropdown 1s ease;
+    transition: 1s ease;
+    
 }
