@@ -1,3 +1,8 @@
+function deneme(){
+    var deneme = document.getElementById("dropbtn");
+    deneme.style.transfrom = "180 deg";
+}
+
 
 function dropdown(){
     var drop = document.getElementById("dropdownContent")
