@@ -17,6 +17,7 @@ function anasayfa() {
 function kahvelerdiv() {
     document.getElementById('coffees').scrollIntoView({ behavior: 'smooth' });
     dropdown()
+    deneme()
 }
 
 function hakkındadiv() {
