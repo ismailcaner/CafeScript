@@ -1,33 +1,25 @@
-function deneme(){
-    var deneme = document.getElementById("dropbtn");
-    deneme.style.transfrom = "180 deg";
-}
-
-
-function dropdown(){
-    var drop = document.getElementById("dropdownContent")
-    drop.classList.remove('show')
-}
-
 function anasayfa() {
     location.reload();
-    dropdown()
+    toggleDropdown()
+    dropdownbtn()
 }
 
 function kahvelerdiv() {
     document.getElementById('coffees').scrollIntoView({ behavior: 'smooth' });
-    dropdown()
-    deneme()
+    toggleDropdown()
+    dropdownbtn()
 }
 
 function hakkındadiv() {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-    dropdown()
+    toggleDropdown()
+    dropdownbtn()
 }
 
 function iletisim() {
     document.getElementById('iletisim').scrollIntoView({ behavior: 'smooth' });
-    dropdown()
+    toggleDropdown()
+    dropdownbtn()
 }
 
 function toggleDropdown() {
