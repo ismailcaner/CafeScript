@@ -149,7 +149,6 @@ body {
 .coffees .cards{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 100px;
 }
 
 .coffees ul{
@@ -167,7 +166,6 @@ body {
     height: 200px;
     justify-items: center;
     animation: transfrom 2s ease;
-    margin-right: 100px;
 }
 
 .coffees ul:hover{
