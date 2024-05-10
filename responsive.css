@@ -118,6 +118,14 @@ main {
     -webkit-overflow-scrolling: touch;
 }
 
+.coffees .cards{
+    margin-left: 100px;
+}
+
+.coffees ul{
+    margin-right: 100px;
+}
+
 .section1 {
     scroll-snap-align: center;
   }
