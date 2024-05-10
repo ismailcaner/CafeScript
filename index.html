@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cafescript.css">
@@ -9,35 +9,14 @@
     <script src="cafescript.js"></script>
     <title>Cafe Script</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-                <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Servis işçisi kaydedildi: ', registration.scope);
-      })
-      .catch(function(err) {
-        console.log('Servis işçisi kaydedilemedi: ', err);
-      });
-  });
-}
-</script>
-        
 </head>
 
- 
-    
 <body>
 
 <!--HEADER-->
 
-    <div class="header">
-        <div class="dropdownmenu">
-            <div class="dropdown" onclick="toggleDropdown()">
-                <button class="dropbtn" id="dropbtn" onclick="dropdownbtn()"><i class="fa-solid fa-chevron-down"></i></button>
-            </div>
-        </div>
+<main>
+    <div class="section header">
     <div class="h11"><h1>Cafe Script</h1></div>
         <div class="buttons">
              <button class="button" onclick="anasayfa()">Ana Sayfa</button>
@@ -45,15 +24,7 @@ if ('serviceWorker' in navigator) {
              <button class="button" onclick="hakkındadiv()">Hakkımızda</button>
              <button class="button" onclick="iletisim()">İletişim</button>
         </div>
-    </div>
-    
-    <div class="dropdown-content" id="dropdownContent">
-        <a href="#" onclick="anasayfa()"> Ana Sayfa</a>
-        <a href="#" onclick="kahvelerdiv()">Kahveler</a>
-        <a href="#" onclick="hakkındadiv()">Hakkımızda</a>
-        <a href="#" onclick="iletisim()">İletişim</a>
-    </div>
-
+</div>
 <!--MAİN-->
 
 <div class="main">
@@ -63,33 +34,24 @@ if ('serviceWorker' in navigator) {
 
 <!--COFFEES-->
 
+<h1 class="section coffeesh1">For You.</h1>
 <div class="coffees" id="coffees">
-    <h1>For You.</h1>
+   <h1>For You.</h1>
         <div class="cards">
-             <ul><img src="cafescriptimages/kahve1.webp">
+             <ul class="section1"><img src="cafescriptimages/kahve1.webp">
                  <h2>Flat White</h2>%100 arabica kahve çekirdeklerinden üretilmiş</ul> 
-             <ul><img src="cafescriptimages/kahve1.webp">
+             <ul class="section1"><img src="cafescriptimages/kahve1.webp">
                  <h2>Cappicino</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>   
-             <ul><img src="cafescriptimages/kahve1.webp">
+             <ul class="section1"><img src="cafescriptimages/kahve1.webp">
                 <h2>Americano</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>    
-             <ul><img src="cafescriptimages/kahve1.webp">
+             <ul class="section1"><img src="cafescriptimages/kahve1.webp">
                  <h2>Espresso</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>     
-        <div class="responsive">
-             <ul><img src="cafescriptimages/kahve1.webp">
-                <h2>Flat White</h2>%100 arabica kahve çekirdeklerinden üretilmiş</ul>
-             <ul><img src="cafescriptimages/kahve1.webp">
-                <h2>Cappicino</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>      
-             <ul><img src="cafescriptimages/kahve1.webp">
-                <h2>Americano</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>       
-             <ul><img src="cafescriptimages/kahve1.webp">
-                <h2>Espresso</h2> %100 arabica kahve çekirdeklerinden üretilmiştir.</ul>
-            </div>
         </div>
 </div>
 
 <!--PREMİUM TASTE-->
 
-<div class="premium" id="about">
+<div class="section premium" id="about">
     <img src="cafescriptimages/premiumtaste.webp" class="premiumtastejpg">
     <div class="premiumtaste">
         <h1> Premium Taste</h1>
@@ -102,7 +64,7 @@ if ('serviceWorker' in navigator) {
 
 <!--COMMENTS-->
 
-<div class="comments">
+<div class="section comments">
     <h1>Sizlerden Gelenler</h1>
     <div class="comment-s" id="commentscroll">
         <div class="space"></div>
@@ -182,7 +144,7 @@ if ('serviceWorker' in navigator) {
 
 <!--ABOUT-->
 
-<div class="about" id="iletisim">
+<div class="section about" id="iletisim">
     <div class="bg-black-opacity">
         <div class="footer">
             <h2>Cafe Script</h2>
@@ -203,5 +165,6 @@ if ('serviceWorker' in navigator) {
         </div>
     </div>
 </div>
+</main>
 </body>
 </html>
