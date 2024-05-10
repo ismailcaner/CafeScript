@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1023px) {
 
 body{
     margin: 0;
@@ -7,6 +7,21 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+main {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+  
+.section {
+    scroll-snap-align: start;
 }
 
 .header {
@@ -55,7 +70,6 @@ body{
 
 .main .slogans {
     font-size: 15px;
-    width: 50vw;
 }
 
 .main p{
@@ -98,28 +112,22 @@ body{
 }
 
 .coffees {
-	overflow:hidden;
+	overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    height: 50vh;
+    -webkit-overflow-scrolling: touch;
 }
 
-.cards {
-	animation: scroll1 15s linear infinite;
-	display: flex;
-	width: calc(270px * 8);
-}
+.section1 {
+    scroll-snap-align: center;
+  }
 
 .coffees .responsive{
     display: flex;
 }
 
 .coffees h1{
-    opacity: 1;
-}
-
-.coffees:hover{
-    h1{
-       opacity: initial;
-       transition: initial;
-    }
+    display: none;
 }
 
 .coffees ul:hover{
@@ -132,6 +140,15 @@ body{
         transition: initial;
         transform: initial;
     }
+}
+
+.coffeesh1{
+    text-align: center;
+    font-family: pacifico, cursive;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    display: block;
 }
 
 .premium{
@@ -194,25 +211,14 @@ body{
     height: 30px;
 }
 
+.about .appstoreicon{
+    width: 150px;
+}
+
 .about .appstore{
     display: flex;
     justify-content: center;
-}
+} 
+
 }
 
-.dropbtn{
-    font-size: x-large;
-    border: none;
-    background-color: transparent;
-    color: white;
-    padding: 0;
-    margin-left: 5vw;
-    transform: rotate(0deg);
-    transition: 1s ease;
-}
-
-.dropbtn.animation{
-    transform: rotate(180deg);
-    transition: 1s ease;
-    
-}
