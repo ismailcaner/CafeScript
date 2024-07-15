@@ -7,6 +7,11 @@ body {
     cursor: default;
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
 /* HEADER */
 
 .header{
