@@ -1,1 +1,1 @@
-domaib: cafe-script.vercel.app
+domain: cafe-script.vercel.app
